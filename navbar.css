@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: content-box;
+    position: relative;
+}
+img{
+    margin:30px 20px;
+    color: lightsalmon;
+    font-family: cursive;
+    font-size: 25px;  
+}
+.head-container{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    gap: 100px;
+    background-color:dimgrey;
+    color: white;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+.head-container.active {
+    /* position: fixed; */
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1;
+    color: white;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-list ul li{
+    list-style-type: none;
+    position: relative;
+}
+.nav-list ul li::after{
+    content: "";
+   position: absolute;
+   top: 20px;
+   left: 0;
+   background-color: red;
+   width: 0;
+   height: 3px;
+   margin-top: 5px;
+}
+.nav-list ul li:hover::after{
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px;
+}
+.body-container{
+   width: 100%;
+   height: 82vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: lightsteelblue;
+   text-transform: capitalize;
+   font-size: 50px;
+   text-shadow: 0 2px 2px 4px rgba(255, 255, 255, .5);
+   background-image: url("https://images.unsplash.com/photo-1745977561659-56a67855b2ce?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   background-size: cover;
+   height: 60vh;
+
+}
+.content{
+    background-color: aliceblue;
+    text-transform: capitalize;
+}
+footer{
+    margin: 20px 20px;
+    text-align: center;
+    font-family: monospace;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

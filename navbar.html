@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky NavBar</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <div class="head-container">
+        <!-- <h2>Chekole Ngus</h2> -->
+         <img src="download (2).svg">
+        <div class="nav-list">
+            <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+     </div>
+     <div class="body-container">
+            <h1>welcome to our website</h1>
+     </div>
+     <div class="content">
+         <p>**The Story of Amanuel: A Journey of Growth**
+                Amanuel is a dedicated and curious individual with a strong passion for learning and self-improvement. 
+                From an early age, he showed a deep interest in understanding how things work, which naturally led him toward fields that require critical thinking and problem-solving. <BR></BR>Whether in academic settings or in everyday life, Amanuel approaches challenges with determination and a thoughtful mindset.
+                Throughout his journey, Amanuel has consistently demonstrated resilience and adaptability. 
+                 He embraces new technologies and ideas, always eager to expand his knowledge. His commitment to growth has earned him the respect of peers and mentors alike, and his calm, focused demeanor makes him a reliable presence in any team or community. <BR></BR>
+                Looking ahead, Amanuel continues to pursue his goals with quiet confidence. He values meaningful work, personal development, and contributing positively to the world around him. With a solid foundation and an open mind, Amanuel is well on his way to making a lasting impact wherever his path leads.
+                Would you like to include any specific details about your skills or studies?
+       </p>
+       <p>**The Story of Amanuel: A Journey of Growth**
+        Amanuel is a dedicated and curious individual with a strong passion for learning and self-improvement. 
+        From an early age, he showed a deep interest in understanding how things work, which naturally led him toward fields that require critical thinking and problem-solving. <BR></BR>Whether in academic settings or in everyday life, Amanuel approaches challenges with determination and a thoughtful mindset.
+        Throughout his journey, Amanuel has consistently demonstrated resilience and adaptability. 
+         He embraces new technologies and ideas, always eager to expand his knowledge. His commitment to growth has earned him the respect of peers and mentors alike, and his calm, focused demeanor makes him a reliable presence in any team or community. <BR></BR>
+        Looking ahead, Amanuel continues to pursue his goals with quiet confidence. He values meaningful work, personal development, and contributing positively to the world around him. With a solid foundation and an open mind, Amanuel is well on his way to making a lasting impact wherever his path leads.
+        Would you like to include any specific details about your skills or studies?
+     </p>
+    </div>
+    <footer>THiS IS THE HISTORY OF ME</footer>
+
+    <script>
+const navbarE1 = document.querySelector(".head-container");
+const contentE1 = document.querySelector(".content")
+const footerE1 = document.querySelector("footer")
+         
+        window.addEventListener('scroll', ()=>{
+               if(window.scrollY > contentE1.offsetTop - navbarE1.offsetHeight) {
+                navbarE1.classList.add("active");
+                // footerE1.style.backgroundColor = 'lightblue';
+                // footerE1.style.height = '50px'
+               }else{
+                navbarE1.classList.remove("active");
+                
+               }                     
+        });
+    </script>
+</body>
+</html>
